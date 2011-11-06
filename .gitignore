@@ -1,21 +1,62 @@
-## MAC OS
+.bundle
+tmp
+log
+logs
+.idea/**# Rails
+.bundle
+db/*.sqlite3
+db/*.sqlite3-journal
+*.log
+
+# Documentation
+.yardoc
+.yardopts
+
+# Public Uploads
+public/system/*
+public/themes/*
+
+# Public Cache
+public/javascripts/cache
+public/stylesheets/cache
+
+# Vendor Cache
+vendor/cache
+
+# Acts as Indexed
+index/**/*
+
+# Mac
 .DS_Store
 
-## TEXTMATE
-*.tmproj
-tmtags
+# Windows
+Thumbs.db
 
-## EMACS
-*~
-\#*
-.\#*
+# NetBeans
+.nbproject
 
-## VIM
+# Eclipse
+.project
+
+# Redcar
+.redcar
+
+# Rubinius
+*.rbc
+
+# Vim
 *.swp
+*.swo
 
-## PROJECT::GENERAL
-coverage
-rdoc
-pkg
+# RubyMine
+.idea
 
-## PROJECT::SPECIFIC'
+# Backup
+*~
+
+# Capybara Bug
+capybara-*html
+
+# sass
+.sass-cache
+
