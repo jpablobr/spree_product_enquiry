@@ -1,0 +1,11 @@
+<%= t('product_enquiries.greeting') %>
+
+<%= t('product_enquiries.name') %>:  <%= @message.name %>
+<%= t('product_enquiries.email') %>: <%= @message.email %>
+<%= t('product_enquiries.phone') %>: <%= @message.phone %>
+<%= t('product_enquiries.subject') %>: <%= @message.subject %>
+
+<%= @message.message %>
+
+<%= t('product_enquiries.footer') %>
+<%= Spree::Config[:site_name] %>

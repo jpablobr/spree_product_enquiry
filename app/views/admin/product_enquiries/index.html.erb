@@ -1,0 +1,36 @@
+<h1><%= t("product_enquiries.product_enquiries")%></h1>
+
+<table class="index">
+  <tr>
+    <%= hook :admin_product_enquiry_index_headers do %>
+      <th><%= t("product_enquiries.name") %></th>
+      <th><%= t("product_enquiries.email") %></th>
+      <th><%= t("product_enquiries.phone") %></th>
+      <th><%= t("product_enquiries.subject") %></th>
+      <th><%= t("product_enquiries.product") %></th>
+    <% end %>
+    <th>
+      <%= hook :admin_product_enquiry_index_header_actions %>
+    </th>
+  </tr>
+  <% @product_enquiries.each do |product_enquiry| %>
+    <tr id="<%= dom_id product_enquiry %>">
+      <%- locals = {:product_enquiry => product_enquiry} %>
+      <%= hook :admin_product_enquiry_index_rows, locals do %>
+        <td><%= product_enquiry.name %></td>
+        <td><%= product_enquiry.email %></td>
+        <td><%= product_enquiry.phone %></td>
+        <td><%= product_enquiry.subject %></td>
+        <td><%= product_enquiry.product.name %></td>
+        <td><%= product_enquiry.created_at %></td>
+      <% end %>
+      <td class="actions">
+        <%= hook :admin_product_enquiry_index_row_actions, locals do %>
+          <%= link_to_view product_enquiry %>
+          &nbsp;
+          <%= link_to_delete product_enquiry  %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

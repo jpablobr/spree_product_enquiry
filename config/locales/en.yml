@@ -1,0 +1,19 @@
+en:
+  product_enquiries:
+    product_enquiries: Products Enquiries
+    product_enquiry: Product Enquiry
+    name: Name
+    email: Email
+    sent: Sent
+    view: View
+    message: Message
+    optionnal: optional
+    phone: Phone
+    subject: Message from
+    product_enquiry_details: Product Enquiry details
+    product_enquiry_list: Product Enquiry list
+    send_message: Send message
+    message_notice: Thank You - Your email has been sent!
+    message_error: There was an error. Please try again.
+    greeting: Thank you for your enquiry. Our staff will get back to you shortly. Please see your submission below.
+    footer: Regards,
