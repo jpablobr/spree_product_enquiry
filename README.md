@@ -6,7 +6,7 @@ Basically the easiest way to implement a product enquiry form.
 Installation
 ============
 
-Put the following line into your gemfile:
+Put the following line in your gemfile:
 
     gem 'spree_product_enquiry'
 
@@ -22,14 +22,14 @@ Run the migration.
 
     rake db:migrate
 
-Include the form.
+Include the form (most likely in your products/show view).
 
-    <%= product_enquiry_form(@product)%>
+    <%= product_enquiry_form(@product) %>
 
 Done SRLY!
 
 It will save the enquiries in the database so they will also be
-available in the admin interface (/admin/products_enquires).
+available in the admin interface (/admin/product_enquires).
 
 Set properly the mail method in the admin area (/admin/mail_methods)
 
