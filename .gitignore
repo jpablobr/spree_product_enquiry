@@ -60,3 +60,4 @@ capybara-*html
 # sass
 .sass-cache
 
+pkg

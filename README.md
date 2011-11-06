@@ -1,7 +1,7 @@
 SpreeProductEnquiry
 ==================
 
-Basically the easiest way to implement a product enquiry form.
+Basically the easiest way to implement an enquiry by specific product on Spree.
 
 Installation
 ============
