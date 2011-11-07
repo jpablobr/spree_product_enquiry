@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_enquiry'
-  s.version     = '0.0.1'
+  s.version     = '0.1.1'
   s.summary     = 'Basically the easiest way to implement a product enquiry form.'
   s.required_ruby_version = '>= 1.8.7'
   s.description = <<-eof

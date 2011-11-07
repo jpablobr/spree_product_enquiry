@@ -1,14 +1,14 @@
 <%= form_for(ProductEnquiry.new) do |f| %>
   <%= f.hidden_field :product_id, { :value => product.id } %>
-  <%= f.label :name, t("product_enquiries.name")+"*" %>
+  <%= f.label :name, t("spree_product_enquiries.name")+"*" %>
   <%= f.text_field :name %>
-  <%= f.label :email, t("product_enquiries.email")+"*" %>
+  <%= f.label :email, t("spree_product_enquiries.email")+"*" %>
   <%= f.text_field :email %>
-  <%= f.label :phone, t("product_enquiries.phone") %>
+  <%= f.label :phone, t("spree_product_enquiries.phone") %>
   <%= f.text_field :phone %>
-  <%= f.label :subject, t("product_enquiries.subject") %>
+  <%= f.label :subject, t("spree_product_enquiries.subject") %>
   <%= f.text_field :subject %>
-  <%= f.label :message, t("product_enquiries.message") %>
+  <%= f.label :message, t("spree_product_enquiries.message") %>
   <%= f.text_area :message %>
-  <%= f.submit t("product_enquiries.send_message"), :class => "button primary" %>
+  <%= f.submit t("spree_product_enquiries.send_message"), :class => "button primary" %>
 <% end %>

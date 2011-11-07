@@ -1,38 +1,38 @@
-<h1><%= "#{t('product_enquiries.product_enquiries')} #{t('product_enquiries.from')} #{@product_enquiry.name}" %></h1>
+<h1><%= "#{t('spree_product_enquiries.product_enquiries')} #{t('spree_product_enquiries.from')} #{@product_enquiry.name}" %></h1>
 
 <%= render :partial => 'admin/shared/product_enquiry_tabs', :locals => {:current => "ProductEnquiry Details"} %>
 
 <%= hook :admin_product_enquiry_show do %>
 <div class="adr">
-  <h4><%= t("product_enquiries.name") %></h4>
+  <h4><%= t("spree_product_enquiries.name") %></h4>
   <p>
     <%= @product_enquiry.name %><br />
   </p>
 </div>
 
 <div class="adr">
-  <h4><%= t("product_enquiries.email") %></h4>
+  <h4><%= t("spree_product_enquiries.email") %></h4>
   <p>
     <%= @product_enquiry.email %><br />
   </p>
 </div>
 
 <div class="adr">
-  <h4><%= t("product_enquiries.phone") %></h4>
+  <h4><%= t("spree_product_enquiries.phone") %></h4>
   <p>
     <%= @product_enquiry.phone %><br />
   </p>
 </div>
 
 <div class="adr">
-  <h4><%= t("product_enquiries.subject") %></h4>
+  <h4><%= t("spree_product_enquiries.subject") %></h4>
   <p>
     <%= @product_enquiry.subject %><br />
   </p>
 </div>
 
 <div class="adr">
-  <h4><%= t("product_enquiries.message") %></h4>
+  <h4><%= t("spree_product_enquiries.message") %></h4>
   <p>
     <%= @product_enquiry.message %>
   </p>

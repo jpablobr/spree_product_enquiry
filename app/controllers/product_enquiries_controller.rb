@@ -7,10 +7,10 @@ class ProductEnquiriesController < Spree::BaseController
       if @enquiry.valid? &&  @enquiry.save
         ProductEnquiryMailer.message_email(@enquiry).deliver
         format.html { redirect_to(:back) }
-        flash[:notice] = t('product_enquiries.message_notice')
+        flash[:notice] = t('spree_product_enquiries.message_notice')
       else
         format.html { redirect_to(:back) }
-        flash[:error] = t('product_enquiries.message_error')
+        flash[:error] = t('spree_product_enquiries.message_error')
       end
     end
   end

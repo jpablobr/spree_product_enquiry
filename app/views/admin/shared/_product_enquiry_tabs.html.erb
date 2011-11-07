@@ -2,10 +2,10 @@
   <ul class="sidebar">
     <%= hook :admin_product_enquiry_tabs do %>
       <li<%== ' class="active"' if current == 'Product Enquiry List' %>>
-        <%= link_to t("product_enquiries.product_enquiry_list"), collection_url() %>
+        <%= link_to t("spree_product_enquiries.product_enquiry_list"), collection_url() %>
       </li>
       <li<%== ' class="active"' if current == 'Product Enquiry Details' %>>
-        <%= link_to t("product_enquiries.product_enquiry_details"), object_url(@product_enquiry) %>
+        <%= link_to t("spree_product_enquiries.product_enquiry_details"), object_url(@product_enquiry) %>
       </li>
     <% end %>
   </ul>
