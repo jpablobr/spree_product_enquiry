@@ -56,11 +56,11 @@
     
     <div id="content"><div id='filecontents'><h1>SpreeProductEnquiry</h1>
 
-<p>Basically the easiest way to implement a product enquiry form.</p>
+<p>Basically the easiest way to implement an enquiry by specific product on Spree.</p>
 
 <h1>Installation</h1>
 
-<p>Put the following line into your gemfile:</p>
+<p>Put the following line in your gemfile:</p>
 
 <pre class="code"><span class='id gem'>gem</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>spree_product_enquiry</span><span class='tstring_end'>'</span></span>
 </pre>
@@ -80,15 +80,15 @@
 <pre class="code"><span class='id rake'>rake</span> <span class='label'>db:</span><span class='id migrate'>migrate</span>
 </pre>
 
-<p>Include the form.</p>
+<p>Include the form (most likely in your products/show view).</p>
 
-<pre class="code">&lt;%= product_enquiry_form(@product)%&gt;
+<pre class="code">&lt;%= product_enquiry_form(@product) %&gt;
 </pre>
 
 <p>Done SRLY!</p>
 
 <p>It will save the enquiries in the database so they will also be
-available in the admin interface (/admin/products_enquires).</p>
+available in the admin interface (/admin/product_enquires).</p>
 
 <p>Set properly the mail method in the admin area (/admin/mail_methods)</p>
 
@@ -128,7 +128,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 </div></div>
     
     <div id="footer">
-  Generated on Mon Nov  7 03:33:40 2011 by 
+  Generated on Mon Nov  7 12:14:10 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.3 (ruby-1.9.2).
 </div>

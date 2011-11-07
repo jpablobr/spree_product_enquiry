@@ -178,10 +178,10 @@
     <span class='kw'>if</span> <span class='ivar'>@enquiry</span><span class='period'>.</span><span class='id valid?'>valid?</span> <span class='op'>&amp;&amp;</span>  <span class='ivar'>@enquiry</span><span class='period'>.</span><span class='id save'>save</span>
       <span class='const'>ProductEnquiryMailer</span><span class='period'>.</span><span class='id message_email'>message_email</span><span class='lparen'>(</span><span class='ivar'>@enquiry</span><span class='rparen'>)</span><span class='period'>.</span><span class='id deliver'>deliver</span>
       <span class='id format'>format</span><span class='period'>.</span><span class='id html'>html</span> <span class='lbrace'>{</span> <span class='id redirect_to'>redirect_to</span><span class='lparen'>(</span><span class='symbol'>:back</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
-      <span class='id flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>product_enquiries.message_notice</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+      <span class='id flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:notice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>spree_product_enquiries.message_notice</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
     <span class='kw'>else</span>
       <span class='id format'>format</span><span class='period'>.</span><span class='id html'>html</span> <span class='lbrace'>{</span> <span class='id redirect_to'>redirect_to</span><span class='lparen'>(</span><span class='symbol'>:back</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
-      <span class='id flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>product_enquiries.message_error</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+      <span class='id flash'>flash</span><span class='lbracket'>[</span><span class='symbol'>:error</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id t'>t</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>spree_product_enquiries.message_error</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
@@ -195,7 +195,7 @@
 </div>
     
     <div id="footer">
-  Generated on Mon Nov  7 03:33:40 2011 by 
+  Generated on Mon Nov  7 12:14:10 2011 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.7.3 (ruby-1.9.2).
 </div>
